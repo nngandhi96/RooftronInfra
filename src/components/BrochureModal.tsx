@@ -62,9 +62,10 @@ export function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
         </div>
         <div className="p-6 space-y-4 text-sm text-steel-700">
           <p>
-            Download the complete technical datasheet covering all 16 structural
-            steel, PEB, roofing profile, and highway infrastructure product
-            lines of <strong>Rooftron Infra Solution Pvt. Ltd.</strong>
+            Download the complete technical datasheet covering all 19 structural
+            steel, PEB, roofing profile, thermal/sound/vibration insulation, and
+            highway infrastructure product lines of{" "}
+            <strong>Rooftron Infra Solution Pvt. Ltd.</strong>
           </p>
           <div className="bg-steel-100 border border-steel-200 p-3.5 text-xs space-y-1 font-mono">
             <div>Document: Rooftron_Infra_Technical_Catalogue_2026.pdf</div>

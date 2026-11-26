@@ -5,11 +5,12 @@ import type {
 } from "@/types/product";
 
 export const CATEGORY_FILTERS: readonly CategoryFilter[] = [
-  { id: "all", label: "All Products (16)" },
+  { id: "all", label: "All Products (19)" },
   { id: "peb", label: "PEB & Structures" },
   { id: "roofing", label: "Roofing & Cladding" },
   { id: "infra", label: "Highway & Infra" },
   { id: "pipes", label: "Pipes, Coils & Solar" },
+  { id: "insulation", label: "All Types Insulation" },
 ];
 
 export const PRODUCTS: readonly Product[] = [
@@ -362,6 +363,84 @@ export const PRODUCTS: readonly Product[] = [
     ],
     applications:
       "Roof & Wall Sheet Fixing, PEB Primary Splice Connections, Solar Clamp Mounting.",
+  },
+  {
+    id: "thermal-insulation",
+    name: "Thermal Insulation",
+    category: "insulation",
+    categoryLabel: "All Types Insulation",
+    isCode: "IS 8183 / ASTM C553",
+    summary:
+      "Rockwool, glasswool, PUF/PIR panels, and radiant XLPE/foil under-deck thermal insulation for PEB roofs and cold storages.",
+    specs: [
+      [
+        "Insulation Media",
+        "Rockwool / Glasswool Blankets, XLPE Foam, Bubble Foil & PUF Panels",
+      ],
+      ["Density & Thickness", "24–120 kg/m³ | Thickness: 12 mm to 150 mm"],
+      [
+        "Thermal Conductivity",
+        "Low k-Value (0.022 – 0.038 W/m·K) with Aluminium Foil Facing",
+      ],
+      [
+        "Fire & Moisture Rating",
+        "Class A1 Non-Combustible (Mineral Wool) & Vapour Barrier",
+      ],
+    ],
+    applications:
+      "PEB Warehouse Under-Deck Roofing, Cold Storages, Cleanrooms, Industrial Ducting & HVAC.",
+  },
+  {
+    id: "sound-insulation",
+    name: "Sound Insulation",
+    category: "insulation",
+    categoryLabel: "All Types Insulation",
+    isCode: "IS 8225 / ISO 354",
+    summary:
+      "High-NRC acoustic mineral wool slabs, perforated sound baffles, and noise-barrier wall liners for industrial plants.",
+    specs: [
+      [
+        "Acoustic Performance",
+        "NRC 0.85 – 1.00 | High Transmission Loss (STC 40–55 dB)",
+      ],
+      [
+        "Core Materials",
+        "High-Density Resin-Bonded Rockwool Slabs & Acoustic Foam",
+      ],
+      [
+        "Facing & Protection",
+        "Black Fibreglass Tissue (FGT), Perforated GI / Aluminium Liner",
+      ],
+      ["Density Options", "48 kg/m³, 64 kg/m³, 96 kg/m³ & 120 kg/m³"],
+    ],
+    applications:
+      "DG Set Enclosures, Factory Acoustic Wall Lining, Compressor Rooms, Auditoriums & Studios.",
+  },
+  {
+    id: "vibration-insulation",
+    name: "Vibration Insulation",
+    category: "insulation",
+    categoryLabel: "All Types Insulation",
+    isCode: "IS 3400 / DIN 53513",
+    summary:
+      "Heavy-duty elastomeric neoprene pads, spring-viscous mounts, and structural anti-vibration bearings for machinery and floors.",
+    specs: [
+      [
+        "Isolation Systems",
+        "Ribbed Neoprene / EPDM Pads, Spring Isolators & Inertia Bases",
+      ],
+      ["Load Capacity", "0.5 MPa to 7.0 MPa Heavy Industrial Static & Dynamic Loads"],
+      [
+        "Isolation Efficiency",
+        "Up to 95–98% Structure-Borne Vibration & Shock Attenuation",
+      ],
+      [
+        "Operating Temp & Spec",
+        "-25°C to +110°C | Oil, Ozone & Weather Resistant Elastomer",
+      ],
+    ],
+    applications:
+      "Heavy CNC Presses, HVAC Chillers, Industrial Blowers, Floating Floors & Bridge Bearings.",
   },
 ];
 

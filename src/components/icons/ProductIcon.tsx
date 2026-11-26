@@ -64,6 +64,24 @@ const ICON_MAP: Record<string, ReactNode> = {
       <path d="M20 24v16h8V24M20 29h8M20 34h8" />
     </>
   ),
+  "thermal-insulation": (
+    <>
+      <rect x="6" y="10" width="36" height="28" />
+      <path d="M12 16c2 3-2 5 0 8s-2 5 0 8M24 16c2 3-2 5 0 8s-2 5 0 8M36 16c2 3-2 5 0 8s-2 5 0 8" />
+    </>
+  ),
+  "sound-insulation": (
+    <>
+      <path d="M10 18h8l10-8v28l-10-8h-8z" />
+      <path d="M34 18a8 8 0 010 12M38 14a14 14 0 010 20" />
+    </>
+  ),
+  "vibration-insulation": (
+    <>
+      <path d="M8 12h32M8 36h32" />
+      <path d="M14 16l20 4-20 4 20 4-20 4 20 4" />
+    </>
+  ),
 };
 
 export function ProductIcon({

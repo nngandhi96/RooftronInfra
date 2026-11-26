@@ -1,4 +1,10 @@
-export type ProductCategoryId = "all" | "peb" | "roofing" | "infra" | "pipes";
+export type ProductCategoryId =
+  | "all"
+  | "peb"
+  | "roofing"
+  | "infra"
+  | "pipes"
+  | "insulation";
 
 export type ProductCategory = Exclude<ProductCategoryId, "all">;
 

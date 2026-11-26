@@ -142,7 +142,7 @@ export function HeroSection({ onSelectProduct }: HeroSectionProps) {
                 href="#products"
                 className="bg-white/10 hover:bg-white/20 border border-white/35 text-white font-display font-bold uppercase tracking-wider text-sm sm:text-base px-6 py-3 rounded-full transition-colors"
               >
-                Explore 16 Product Lines
+                Explore 19 Product Lines
               </a>
 
               <button
