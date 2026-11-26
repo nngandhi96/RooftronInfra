@@ -70,6 +70,7 @@ const organizationJsonLd = {
   alternateName: ["Rooftron Infra", "rooftroninfra", "Rooftron"],
   url: "https://www.rooftroninfra.com",
   email: "sales@rooftroninfra.com",
+  telephone: "+91-9471089543",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Unit No Ccpt Bo402, City Centre Mall, Lodhipur",

@@ -88,14 +88,25 @@ export function Footer({ onSelectProduct }: FooterProps) {
               <br />
               Patna, Bihar, India – 800001
             </p>
-            <p className="text-xs text-slate-400">
-              Email:{" "}
-              <a
-                href={`mailto:${COMPANY_INFO.email}`}
-                className="text-white hover:underline"
-              >
-                {COMPANY_INFO.email}
-              </a>
+            <p className="text-xs text-slate-400 space-y-1">
+              <span className="block">
+                Phone / WhatsApp:{" "}
+                <a
+                  href={COMPANY_INFO.phoneHref}
+                  className="text-white hover:underline"
+                >
+                  {COMPANY_INFO.phoneDisplay}
+                </a>
+              </span>
+              <span className="block">
+                Email:{" "}
+                <a
+                  href={`mailto:${COMPANY_INFO.email}`}
+                  className="text-white hover:underline"
+                >
+                  {COMPANY_INFO.email}
+                </a>
+              </span>
             </p>
           </div>
         </div>

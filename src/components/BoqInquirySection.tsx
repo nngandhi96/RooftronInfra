@@ -171,7 +171,25 @@ export function BoqInquirySection({
                   <div className="text-xs font-bold uppercase tracking-wider text-navy-900">
                     Sales &amp; Tender Desk
                   </div>
-                  <p className="text-xs text-steel-700 mt-0.5">
+                  <p className="text-xs text-steel-700 mt-0.5 space-y-0.5">
+                    Phone / WhatsApp:{" "}
+                    <a
+                      href={COMPANY_INFO.phoneHref}
+                      className="font-semibold text-navy-900 hover:underline"
+                    >
+                      {COMPANY_INFO.phoneDisplay}
+                    </a>{" "}
+                    (
+                    <a
+                      href={COMPANY_INFO.whatsappHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-[#16A34A] hover:underline"
+                    >
+                      WhatsApp Chat
+                    </a>
+                    )
+                    <br />
                     Email:{" "}
                     <a
                       href={`mailto:${COMPANY_INFO.email}`}
