@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { COMPANY_INFO } from "@/data/company";
 import { PRODUCTS } from "@/data/products";
-import { submitBoqInquiry } from "@/lib/supabase/client";
 import type { BoqInquiryResponse } from "@/types/product";
 
 export const DEFAULT_BOQ_PRODUCT = "Multiple / Complete BOQ Package";
@@ -52,23 +51,40 @@ export function BoqInquirySection({
     setErrorMessage(null);
 
     try {
-      const result = await submitBoqInquiry({
-        companyName,
-        contactPerson,
-        phone,
-        email,
-        siteLocation,
-        primaryProduct,
-        estimatedVolume,
-        boqNotes,
+      const response = await fetch("/api/boq-inquiries", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          companyName,
+          contactPerson,
+          phone,
+          email,
+          siteLocation,
+          primaryProduct,
+          estimatedVolume,
+          boqNotes,
+        }),
       });
 
-      onConfirmationChange(result);
-    } catch (err) {
+      const data = (await response.json()) as
+        | BoqInquiryResponse
+        | { error?: string };
+
+      if (!response.ok) {
+        const message =
+          "error" in data && data.error
+            ? data.error
+            : "Unable to submit BOQ inquiry. Please try again.";
+        setErrorMessage(message);
+        return;
+      }
+
+      onConfirmationChange(data as BoqInquiryResponse);
+    } catch {
       setErrorMessage(
-        err instanceof Error
-          ? err.message
-          : "Unable to submit BOQ inquiry. Please check your connection and try again."
+        "Network error while submitting your BOQ inquiry. Please check your connection and try again."
       );
     } finally {
       setIsSubmitting(false);
