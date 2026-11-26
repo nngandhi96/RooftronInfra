@@ -8,9 +8,9 @@ export const CATEGORY_FILTERS: readonly CategoryFilter[] = [
   { id: "all", label: "All Products (19)" },
   { id: "peb", label: "PEB & Structures" },
   { id: "roofing", label: "Roofing & Cladding" },
+  { id: "insulation", label: "All Types Insulation" },
   { id: "infra", label: "Highway & Infra" },
   { id: "pipes", label: "Pipes, Coils & Solar" },
-  { id: "insulation", label: "All Types Insulation" },
 ];
 
 export const PRODUCTS: readonly Product[] = [
