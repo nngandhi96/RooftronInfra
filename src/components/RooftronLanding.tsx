@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { PRODUCTS } from "@/data/products";
 import type { BoqInquiryResponse } from "@/types/product";
-import { TopUtilityBar } from "@/components/TopUtilityBar";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { ProductCatalog } from "@/components/ProductCatalog";
@@ -16,11 +15,9 @@ import {
 import { Footer } from "@/components/Footer";
 import { QuickActionDock } from "@/components/QuickActionDock";
 import { ProductSpecModal } from "@/components/ProductSpecModal";
-import { BrochureModal } from "@/components/BrochureModal";
 
 export function RooftronLanding() {
   const [activeProductId, setActiveProductId] = useState<string | null>(null);
-  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
   const [primaryProduct, setPrimaryProduct] = useState(DEFAULT_BOQ_PRODUCT);
   const [quoteTriggerNonce, setQuoteTriggerNonce] = useState(0);
   const [boqConfirmation, setBoqConfirmation] =
@@ -38,7 +35,6 @@ export function RooftronLanding() {
 
   return (
     <>
-      <TopUtilityBar onOpenBrochure={() => setIsBrochureOpen(true)} />
       <Navbar onSelectProduct={(id) => setActiveProductId(id)} />
       <main>
         <HeroSection onSelectProduct={(id) => setActiveProductId(id)} />
@@ -62,10 +58,6 @@ export function RooftronLanding() {
         product={activeProduct}
         onClose={() => setActiveProductId(null)}
         onAddToQuote={handleQuoteProduct}
-      />
-      <BrochureModal
-        isOpen={isBrochureOpen}
-        onClose={() => setIsBrochureOpen(false)}
       />
     </>
   );

@@ -95,7 +95,7 @@ export function Navbar({ onSelectProduct }: NavbarProps) {
               <div
                 className={`${
                   isMegaMenuOpen ? "block" : "hidden"
-                } fixed left-0 right-0 top-28 bg-white border-t border-b border-steel-200 shadow-xl z-50`}
+                } fixed left-0 right-0 top-20 bg-white border-t border-b border-steel-200 shadow-xl z-50`}
               >
                 <div className="max-w-7xl mx-auto px-6 py-6">
                   <div className="flex items-center justify-between pb-3 mb-4 border-b border-steel-200">
