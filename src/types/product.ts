@@ -20,19 +20,15 @@ export interface CategoryFilter {
   label: string;
 }
 
-export interface HeroShowcaseSpec {
-  label: string;
-  val: string;
-}
-
-export interface HeroShowcaseItem {
+export interface HeroSlide {
   id: string;
-  tabLabel: string;
-  tag: string;
-  title: string;
-  desc: string;
-  specs: readonly HeroShowcaseSpec[];
+  eyebrow: string;
+  headline: string;
+  subtitle: string;
+  image: string;
+  imageAlt: string;
   productId: string;
+  featuredLabel: string;
 }
 
 export interface BoqInquiryPayload {

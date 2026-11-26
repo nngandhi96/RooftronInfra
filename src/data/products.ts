@@ -1,6 +1,6 @@
 import type {
   CategoryFilter,
-  HeroShowcaseItem,
+  HeroSlide,
   Product,
 } from "@/types/product";
 
@@ -365,44 +365,65 @@ export const PRODUCTS: readonly Product[] = [
   },
 ];
 
-export const HERO_SHOWCASES: readonly HeroShowcaseItem[] = [
+export const HERO_SLIDES: readonly HeroSlide[] = [
   {
-    id: "peb-showcase",
-    tabLabel: "01. PEB & Industrial Sheds",
-    tag: "TURNKEY STRUCTURAL SYSTEMS",
-    title: "Pre-Engineered Steel Buildings & Warehouses",
-    desc: "Primary built-up rafters & columns paired with high-tensile Z/C purlins and insulated or single-skin roofing.",
-    specs: [
-      { label: "Clear Span", val: "Up to 60m" },
-      { label: "Steel Grade", val: "IS 2062 E350" },
-      { label: "Wind Code", val: "IS 875 Part-3" },
-    ],
+    id: "peb-erection",
+    eyebrow: "Welcome To Rooftron Infra",
+    headline: "Where Steel Meets Smart Engineering",
+    subtitle:
+      "Reliable Pre-Engineered Buildings (PEB), Industrial Sheds & Turnkey Steel Structures. Built to Perform.",
+    image: "/images/hero/slide-1-peb-erection.jpg",
+    imageAlt:
+      "Crane hoisting structural steel I-beam onto a Pre-Engineered Steel Building frame at sunset",
     productId: "peb",
+    featuredLabel: "PEB Systems",
   },
   {
-    id: "roofing-showcase",
-    tabLabel: "02. Profile Roof Sheets",
-    tag: "HIGH-TENSILE ROOF CLADDING",
-    title: "Colour-Coated Trapezoidal Roof & Deck Sheets",
-    desc: "550 MPa Al-Zn coated steel profiles engineered for leak-proof lapping, thermal reflection, and heavy monsoon drainage.",
-    specs: [
-      { label: "Thickness", val: "0.40 – 0.80 mm" },
-      { label: "Coating", val: "AZ150 / Z275" },
-      { label: "Yield", val: "550 MPa" },
-    ],
-    productId: "roof-sheets",
-  },
-  {
-    id: "infra-showcase",
-    tabLabel: "03. Crash Barriers & Solar",
-    tag: "INFRASTRUCTURE & ENERGY",
-    title: "MoRTH Highway Crash Barriers & Solar Mounts",
-    desc: "Hot-dip galvanised (550+ GSM) W-Beam guardrails, cable trays, electro-forged gratings, and solar structures.",
-    specs: [
-      { label: "Galvanising", val: "550–610 GSM" },
-      { label: "Standard", val: "MoRTH / IS 4759" },
-      { label: "Beam Gauge", val: "3.0 mm Thick" },
-    ],
+    id: "infra-construction",
+    eyebrow: "Welcome To Rooftron Infra",
+    headline: "Precision-Built Steel for Modern Construction",
+    subtitle:
+      "Optimized for strength, speed, and long-term value across highways, factories, and logistics parks.",
+    image: "/images/hero/slide-2-infra-construction.jpg",
+    imageAlt:
+      "Heavy civil and structural steel construction site at sunset with tower crane and steel columns",
     productId: "crash-barriers",
+    featuredLabel: "Highway & Infra",
+  },
+  {
+    id: "peb-engineers",
+    eyebrow: "Welcome To Rooftron Infra",
+    headline: "Strengthening Foundations with Every Beam",
+    subtitle:
+      "IS 2062 / E350 primary framing paired with high-tensile AZ150 colour-coated roof cladding systems.",
+    image: "/images/hero/slide-3-peb-engineers.jpg",
+    imageAlt:
+      "Structural engineers reviewing blueprints in front of a multi-bay PEB steel portal frame",
+    productId: "roof-sheets",
+    featuredLabel: "Roof & Deck Sheets",
+  },
+  {
+    id: "steel-welding",
+    eyebrow: "Welcome To Rooftron Infra",
+    headline: "Powering Progress Through Precision-Made Steel",
+    subtitle:
+      "Rooftron Infra engineers heavy metal fabrications, cable trays, and electro-forged gratings for safety and durability.",
+    image: "/images/hero/slide-4-steel-welding.jpg",
+    imageAlt:
+      "Industrial steel fabricator welding a heavy structural I-beam with bright sparks",
+    productId: "fabrications",
+    featuredLabel: "Metal Fabrications",
+  },
+  {
+    id: "erw-pipes",
+    eyebrow: "Welcome To Rooftron Infra",
+    headline: "Engineered for Endurance, Manufactured for Trust",
+    subtitle:
+      "ERW structural pipes, galvanised coils, and solar mounting structures with full mill test certification.",
+    image: "/images/hero/slide-5-erw-pipes.jpg",
+    imageAlt:
+      "Stacked bundles of gleaming circular ERW and galvanised steel pipes inside a steel warehouse",
+    productId: "erw-pipes",
+    featuredLabel: "ERW Pipes & Coils",
   },
 ];
