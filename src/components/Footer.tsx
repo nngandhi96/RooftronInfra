@@ -82,11 +82,9 @@ export function Footer({ onSelectProduct }: FooterProps) {
               Registered Office
             </h4>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Unit No Ccpt Bo402, City Centre Mall,
+              Unit No. CCPT BO402, City Centre Mall,
               <br />
-              Lodhipur, Patna G.P.O., Phulwari,
-              <br />
-              Patna, Bihar, India – 800001
+              Lodhipur, Patna, Bihar 800001
             </p>
             <p className="text-xs text-slate-400 space-y-1">
               <span className="block">

@@ -15,7 +15,7 @@ export const COMPANY_INFO = {
     "https://wa.me/919471089543?text=Hello%20Rooftron%20Infra%2C%20I%20would%20like%20to%20request%20a%20BOQ%20quote.",
   shortAddress: "Regd. Office: City Centre Mall, Lodhipur, Patna, Bihar – 800001",
   fullAddress:
-    "Unit No Ccpt Bo402, City Centre Mall, Lodhipur, Patna G.P.O., Phulwari, Patna, Bihar, India – 800001",
+    "Unit No. CCPT BO402, City Centre Mall, Lodhipur, Patna, Bihar 800001",
   workingHours: "Monday – Saturday: 09:30 AM – 06:30 PM IST",
 } as const;
 

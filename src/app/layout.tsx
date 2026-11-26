@@ -73,7 +73,7 @@ const organizationJsonLd = {
   telephone: "+91-9471089543",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Unit No Ccpt Bo402, City Centre Mall, Lodhipur",
+    streetAddress: "Unit No. CCPT BO402, City Centre Mall, Lodhipur",
     addressLocality: "Patna",
     addressRegion: "Bihar",
     postalCode: "800001",
