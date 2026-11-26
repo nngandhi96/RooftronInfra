@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #061529;
+  --color-navy-900: #0A2240;
+  --color-navy-800: #0F3057;
+
+  --color-roofblue-700: #0E3E7A;
+  --color-roofblue-600: #124E96;
+  --color-roofblue-500: #1B66C2;
+
+  --color-safety-600: #EA580C;
+  --color-safety-500: #F97316;
+  --color-safety-400: #FB923C;
+
+  --color-steel-50: #F8FAFC;
+  --color-steel-100: #F4F6F9;
+  --color-steel-200: #E2E8F0;
+  --color-steel-300: #CBD5E1;
+  --color-steel-700: #334155;
+  --color-steel-900: #0F172A;
+
+  --font-display: var(--font-barlow-condensed), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+/* Subtle architectural grid overlay for hero and technical headers */
+.blueprint-grid {
+  background-size: 28px 28px;
+  background-image:
+    linear-gradient(to right, rgba(226, 232, 240, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.45) 1px, transparent 1px);
+}
+
+.blueprint-grid-dark {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbar for specification tables */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F6F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0A2240;
+}

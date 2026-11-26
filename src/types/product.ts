@@ -1,0 +1,55 @@
+export type ProductCategoryId = "all" | "peb" | "roofing" | "infra" | "pipes";
+
+export type ProductCategory = Exclude<ProductCategoryId, "all">;
+
+export type ProductSpecRow = readonly [label: string, value: string];
+
+export interface Product {
+  id: string;
+  name: string;
+  category: ProductCategory;
+  categoryLabel: string;
+  isCode: string;
+  summary: string;
+  specs: readonly ProductSpecRow[];
+  applications: string;
+}
+
+export interface CategoryFilter {
+  id: ProductCategoryId;
+  label: string;
+}
+
+export interface HeroShowcaseSpec {
+  label: string;
+  val: string;
+}
+
+export interface HeroShowcaseItem {
+  id: string;
+  tabLabel: string;
+  tag: string;
+  title: string;
+  desc: string;
+  specs: readonly HeroShowcaseSpec[];
+  productId: string;
+}
+
+export interface BoqInquiryPayload {
+  companyName: string;
+  contactPerson: string;
+  phone: string;
+  email: string;
+  siteLocation: string;
+  primaryProduct: string;
+  estimatedVolume: string;
+  boqNotes: string;
+}
+
+export interface BoqInquiryResponse {
+  quoteRef: string;
+  companyName: string;
+  primaryProduct: string;
+  siteLocation: string;
+  createdAt: string;
+}
