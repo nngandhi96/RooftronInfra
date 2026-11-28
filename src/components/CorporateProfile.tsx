@@ -17,19 +17,22 @@ export function CorporateProfile() {
               Built to Protect. Engineered to Last.
             </h2>
             <p className="text-sm sm:text-base text-steel-700 leading-relaxed">
-              <strong>Rooftron Infra Solution Private Limited</strong> is a
-              registered Indian infrastructure, roofing, and structural steel
-              solutions company headquartered at City Centre Mall, Patna, Bihar.
-              We partner with EPC contractors, warehouse developers, factory
-              owners, and government infrastructure agencies to supply
-              precision-engineered steel buildings and cladding systems.
+              <strong>
+                Your One-Stop Destination for Roofing, Insulation &amp; Complete
+                Steel Building Solutions.
+              </strong>{" "}
+              From sourcing to supply, we deliver quality, reliability and
+              performance under one roof.
             </p>
             <p className="text-sm sm:text-base text-steel-700 leading-relaxed">
-              From primary structural framing (built-up I-sections, Z &amp; C
-              purlins) to high-rib colour-coated roofing profiles, deck sheets,
-              highway W-beam crash barriers, and solar mounting structures,
-              every batch undergoes dimensional and coating thickness
-              verification before site dispatch.
+              We operate as a comprehensive trading, supplier, wholesale
+              distribution and retail enterprise, offering reliable product
+              sourcing and seamless supply solutions. With efficient road
+              transportation and logistics support, we cater to individual
+              customers, contractors, dealers, builders and large-scale
+              commercial projects. We specialize in bulk supplies, customized
+              business requirements and dedicated commercial inquiries, ensuring
+              quality products, competitive pricing and dependable service.
             </p>
 
             {/* 3 Core Operational Pillars */}
