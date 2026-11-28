@@ -58,7 +58,7 @@ export function Navbar({ onSelectProduct }: NavbarProps) {
               href="#about"
               className="text-sm font-semibold text-steel-900 hover:text-roofblue-600 transition-colors"
             >
-              About Company
+              About
             </a>
 
             {/* Products Mega-Menu Trigger */}
