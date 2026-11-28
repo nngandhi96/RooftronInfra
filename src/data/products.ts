@@ -20,6 +20,7 @@ export const PRODUCTS: readonly Product[] = [
     category: "roofing",
     categoryLabel: "Roofing & Cladding",
     isCode: "IS 14246 / IS 15965",
+    image: "/images/products/roof-sheets.jpg",
     summary:
       "Trapezoidal colour-coated PPGI & PPGL profile sheets with high corrosion and wind uplift resistance.",
     specs: [

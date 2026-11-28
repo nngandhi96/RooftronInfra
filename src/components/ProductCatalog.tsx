@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { CATEGORY_FILTERS, PRODUCTS } from "@/data/products";
 import { ProductIcon } from "@/components/icons/ProductIcon";
@@ -62,53 +63,118 @@ export function ProductCatalog({
           </div>
         </div>
 
-        {/* 16-Product Technical Card Grid */}
+        {/* Product Technical Card Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
-          {filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white border border-steel-200 hover:border-roofblue-600 transition-colors rounded-[2px] flex flex-col justify-between group"
-            >
-              <div className="p-5 space-y-3">
-                <div className="flex items-start justify-between gap-2">
-                  <div className="w-12 h-12 bg-steel-100 border border-steel-200 text-navy-900 group-hover:bg-navy-900 group-hover:text-white flex items-center justify-center rounded-[2px] transition-colors">
-                    <ProductIcon productId={product.id} />
-                  </div>
-                  <span className="text-[10px] font-mono font-bold bg-steel-100 text-steel-700 border border-steel-200 px-2 py-0.5 rounded-[2px]">
-                    {product.isCode}
-                  </span>
-                </div>
-                <div>
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-roofblue-600">
-                    {product.categoryLabel}
-                  </div>
-                  <h3 className="font-display font-bold text-xl text-navy-900 uppercase mt-0.5 group-hover:text-roofblue-600 transition-colors">
-                    {product.name}
-                  </h3>
-                </div>
-                <p className="text-xs text-steel-700 leading-relaxed">
-                  {product.summary}
-                </p>
-              </div>
+          {filteredProducts.map((product) => {
+            const hasImage = Boolean(product.image);
+            return (
+              <div
+                key={product.id}
+                className={`relative overflow-hidden border transition-colors rounded-[2px] flex flex-col justify-between group ${
+                  hasImage
+                    ? "bg-navy-950 border-navy-800 hover:border-safety-500"
+                    : "bg-white border-steel-200 hover:border-roofblue-600"
+                }`}
+              >
+                {product.image && (
+                  <>
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/65 to-navy-950/45"
+                    />
+                  </>
+                )}
 
-              <div className="px-5 py-3 bg-steel-50 border-t border-steel-200 flex items-center justify-between">
-                <button
-                  type="button"
-                  onClick={() => onSelectProduct(product.id)}
-                  className="text-xs font-bold uppercase tracking-wider text-navy-900 hover:text-roofblue-600 inline-flex items-center gap-1 cursor-pointer"
+                <div className="relative z-10 p-5 space-y-3">
+                  <div className="flex items-start justify-between gap-2">
+                    <div
+                      className={`w-12 h-12 border flex items-center justify-center rounded-[2px] transition-colors ${
+                        hasImage
+                          ? "bg-navy-950/65 backdrop-blur-xs border-white/25 text-white group-hover:bg-safety-500 group-hover:border-safety-500"
+                          : "bg-steel-100 border-steel-200 text-navy-900 group-hover:bg-navy-900 group-hover:text-white"
+                      }`}
+                    >
+                      <ProductIcon productId={product.id} />
+                    </div>
+                    <span
+                      className={`text-[10px] font-mono font-bold border px-2 py-0.5 rounded-[2px] ${
+                        hasImage
+                          ? "bg-navy-950/75 text-slate-100 border-white/25"
+                          : "bg-steel-100 text-steel-700 border-steel-200"
+                      }`}
+                    >
+                      {product.isCode}
+                    </span>
+                  </div>
+                  <div>
+                    <div
+                      className={`text-[10px] font-bold uppercase tracking-wider ${
+                        hasImage ? "text-safety-400" : "text-roofblue-600"
+                      }`}
+                    >
+                      {product.categoryLabel}
+                    </div>
+                    <h3
+                      className={`font-display font-bold text-xl uppercase mt-0.5 transition-colors ${
+                        hasImage
+                          ? "text-white group-hover:text-safety-400 drop-shadow-sm"
+                          : "text-navy-900 group-hover:text-roofblue-600"
+                      }`}
+                    >
+                      {product.name}
+                    </h3>
+                  </div>
+                  <p
+                    className={`text-xs leading-relaxed ${
+                      hasImage
+                        ? "text-slate-100 drop-shadow-sm"
+                        : "text-steel-700"
+                    }`}
+                  >
+                    {product.summary}
+                  </p>
+                </div>
+
+                <div
+                  className={`relative z-10 px-5 py-3 border-t flex items-center justify-between ${
+                    hasImage
+                      ? "bg-navy-950/80 border-white/15"
+                      : "bg-steel-50 border-steel-200"
+                  }`}
                 >
-                  Technical Specs &rarr;
-                </button>
-                <button
-                  type="button"
-                  onClick={() => onQuoteProduct(product.name)}
-                  className="text-[11px] font-bold uppercase tracking-wider text-safety-600 hover:text-navy-900 cursor-pointer"
-                >
-                  + Quote
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => onSelectProduct(product.id)}
+                    className={`text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1 cursor-pointer ${
+                      hasImage
+                        ? "text-white hover:text-safety-400"
+                        : "text-navy-900 hover:text-roofblue-600"
+                    }`}
+                  >
+                    Technical Specs &rarr;
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onQuoteProduct(product.name)}
+                    className={`text-[11px] font-bold uppercase tracking-wider cursor-pointer ${
+                      hasImage
+                        ? "text-safety-400 hover:text-white"
+                        : "text-safety-600 hover:text-navy-900"
+                    }`}
+                  >
+                    + Quote
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

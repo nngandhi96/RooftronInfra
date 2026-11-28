@@ -17,6 +17,7 @@ export interface Product {
   categoryLabel: string;
   isCode: string;
   summary: string;
+  image?: string;
   specs: readonly ProductSpecRow[];
   applications: string;
 }
