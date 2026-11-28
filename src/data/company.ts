@@ -65,7 +65,6 @@ export const IS_STANDARDS = [
 ] as const;
 
 export const FOOTER_PEB_LINKS = [
-  { productId: "peb", label: "Pre-Engineered Buildings (PEB)" },
   { productId: "sheds", label: "Industrial Sheds & Warehouses" },
   { productId: "roof-sheets", label: "Colour-Coated Roof Sheets" },
   { productId: "deck-sheets", label: "Composite Deck Sheets" },
@@ -74,10 +73,9 @@ export const FOOTER_PEB_LINKS = [
 ] as const;
 
 export const FOOTER_INFRA_LINKS = [
-  { productId: "crash-barriers", label: "Highway Crash Barriers" },
-  { productId: "cable-trays", label: "Perforated Cable Trays" },
-  { productId: "gratings", label: "Electro Forged Gratings" },
+  { productId: "handrails", label: "Handrails & Ladders" },
   { productId: "solar", label: "Solar Mount Structures" },
-  { productId: "erw-pipes", label: "ERW Pipes & Sections" },
-  { productId: "fabrications", label: "Heavy Metal Fabrications" },
+  { productId: "thermal-insulation", label: "Thermal Insulation" },
+  { productId: "sound-insulation", label: "Sound Insulation" },
+  { productId: "vibration-insulation", label: "Vibration Insulation" },
 ] as const;

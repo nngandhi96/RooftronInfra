@@ -5,7 +5,7 @@ import type {
 } from "@/types/product";
 
 export const CATEGORY_FILTERS: readonly CategoryFilter[] = [
-  { id: "all", label: "All Products (19)" },
+  { id: "all", label: "All Products (10)" },
   { id: "peb", label: "PEB & Structures" },
   { id: "roofing", label: "Roofing & Cladding" },
   { id: "insulation", label: "All Types Insulation" },
@@ -14,26 +14,6 @@ export const CATEGORY_FILTERS: readonly CategoryFilter[] = [
 ];
 
 export const PRODUCTS: readonly Product[] = [
-  {
-    id: "peb",
-    name: "Pre-Engineered Buildings",
-    category: "peb",
-    categoryLabel: "PEB & Structures",
-    isCode: "IS 800 / IS 2062",
-    summary:
-      "Custom-engineered clear-span steel buildings, factory bays, and multi-storey commercial frames.",
-    specs: [
-      ["Primary Framing", "Built-up Tapered I-Sections (IS 2062 E250 / E350)"],
-      [
-        "Secondary Members",
-        "Cold-Formed Galvanised Z & C Purlins (275–345 MPa)",
-      ],
-      ["Clear Span Capability", "Up to 60 Meters without intermediate columns"],
-      ["Surface Finish", "Red Oxide Zinc Chromate / Epoxy Industrial Primer"],
-    ],
-    applications:
-      "Manufacturing Plants, Logistics Parks, Cold Storages, Aircraft Hangars, Commercial Warehouses.",
-  },
   {
     id: "roof-sheets",
     name: "Roof Sheets",
@@ -101,112 +81,6 @@ export const PRODUCTS: readonly Product[] = [
       "Mezzanine Floors, Multi-Level Warehouses, Commercial Buildings, Bridge Decking.",
   },
   {
-    id: "cable-trays",
-    name: "Cable Trays",
-    category: "infra",
-    categoryLabel: "Highway & Infra",
-    isCode: "IS 2629 / IEC 61537",
-    summary:
-      "Perforated, ladder-type, and raceway cable management systems in pre-galvanised and hot-dip finishes.",
-    specs: [
-      ["Tray Types", "Perforated, Ladder Type, Solid Bottom & Wire Mesh"],
-      ["Width & Height", "Width: 50 mm to 1000 mm | Flange: 25 mm to 150 mm"],
-      ["Sheet Thickness", "1.2 mm, 1.6 mm, 2.0 mm, 2.5 mm"],
-      [
-        "Finish Options",
-        "Hot-Dip Galvanised (IS 4759), Pre-Galvanised, Powder Coated",
-      ],
-    ],
-    applications:
-      "Power Substations, Data Centres, Industrial Plants, Metro & Commercial Complexes.",
-  },
-  {
-    id: "gratings",
-    name: "Electro Forged Gratings",
-    category: "infra",
-    categoryLabel: "Highway & Infra",
-    isCode: "IS 4759 / BS 4592",
-    summary:
-      "High-strength load-bearing serrated and plain steel gratings for industrial walkways and drainage covers.",
-    specs: [
-      [
-        "Bearing Bar Size",
-        "25x3 mm up to 65x5 mm (Plain or Serrated Anti-Slip)",
-      ],
-      ["Cross Bar", "6 mm / 8 mm Twisted Square Rod"],
-      ["Mesh Pitch", "30x100 mm / 40x100 mm Standard"],
-      [
-        "Surface Treatment",
-        "Hot-Dip Galvanised (Min. 610 GSM) / Bitumen Painted",
-      ],
-    ],
-    applications:
-      "Industrial Platforms, Catwalks, Trench & Drain Covers, Stair Treads, Refineries.",
-  },
-  {
-    id: "crash-barriers",
-    name: "Crash Barriers",
-    category: "infra",
-    categoryLabel: "Highway & Infra",
-    isCode: "MoRTH / IRC 119",
-    summary:
-      "W-Beam and Thrie-Beam hot-dip galvanised highway safety guardrails with C-channel posts and spacers.",
-    specs: [
-      [
-        "Beam Profile",
-        "W-Beam (312 mm) & Thrie-Beam (506 mm) x 3.0 mm Thick",
-      ],
-      ["Steel Grade", "IS 5986 Fe 360 / Fe 410 / Fe 510"],
-      ["Galvanisation", "Hot-Dip Galvanised @ 550 GSM (IS 4759)"],
-      [
-        "Complete Assembly",
-        "Guardrail Beam, C-Post (150x75x5), Spacer & Fasteners",
-      ],
-    ],
-    applications:
-      "National & State Highways, Expressways, Bridges, Flyovers, Mountain Roads.",
-  },
-  {
-    id: "erw-pipes",
-    name: "ERW Pipes",
-    category: "pipes",
-    categoryLabel: "Pipes, Coils & Solar",
-    isCode: "IS 1161 / IS 1239 / IS 4923",
-    summary:
-      "Electric Resistance Welded MS black and galvanised round, square, and rectangular structural pipes.",
-    specs: [
-      [
-        "Outer Diameter / Size",
-        "15 mm NB to 300 mm NB | SHS/RHS up to 250x250 mm",
-      ],
-      ["Wall Thickness", "1.6 mm to 10.0 mm (Light, Medium & Heavy Class)"],
-      ["Yield Grade", "YST 210, YST 240, YST 310"],
-      ["End Finish", "Plain End, Bevelled, or Threaded with Socket"],
-    ],
-    applications:
-      "Structural Trusses, Water & Fire-Fighting Lines, Scaffolding, Fencing & Gates.",
-  },
-  {
-    id: "scaffolding",
-    name: "Swaging Poles & Scaffolding",
-    category: "peb",
-    categoryLabel: "PEB & Structures",
-    isCode: "IS 2713 / IS 4014",
-    summary:
-      "Stepped tubular steel lighting poles and heavy-duty cuplock scaffolding systems for civil construction.",
-    specs: [
-      ["Pole Height", "6 Meters to 14 Meters (Single / Double Arm Brackets)"],
-      [
-        "Scaffolding System",
-        "Cuplock Verticals, Ledgers, Base Jacks & Steel Planks",
-      ],
-      ["Material Spec", "IS 1161 YST 240 Steel Tubes"],
-      ["Finish", "Hot-Dip Galvanised or Primer Coated"],
-    ],
-    applications:
-      "Street & Highway Lighting, High-Rise Building Construction, Industrial Maintenance.",
-  },
-  {
     id: "shutter",
     name: "Shutter Profiles",
     category: "roofing",
@@ -271,69 +145,6 @@ export const PRODUCTS: readonly Product[] = [
     ],
     applications:
       "Utility Solar Parks, Industrial PEB Rooftop Solar, Solar Carports.",
-  },
-  {
-    id: "hot-rolled",
-    name: "Hot Rolled Products",
-    category: "pipes",
-    categoryLabel: "Pipes, Coils & Solar",
-    isCode: "IS 2062 / IS 1079",
-    summary:
-      "Mill-sourced HR coils, heavy plates, chequered plates, ISMB beams, channels (ISMC), and angles.",
-    specs: [
-      [
-        "HR Plates & Coils",
-        "1.6 mm to 50 mm Thickness (Width: 1250 / 1500 / 2000 mm)",
-      ],
-      [
-        "Structural Sections",
-        "ISMB, NPB/WPB Beams, ISMC Channels, ISA Angles",
-      ],
-      ["Grade Compliance", "IS 2062 E250 A/BR/BO & E350"],
-      ["Traceability", "Supplied with Original Mill Test Certificates"],
-    ],
-    applications:
-      "Heavy Steel Fabrication, PEB Built-Up Girders, Bridge Girders, Base Plates.",
-  },
-  {
-    id: "fabrications",
-    name: "Metal Fabrications",
-    category: "peb",
-    categoryLabel: "PEB & Structures",
-    isCode: "AWS D1.1 / IS 816",
-    summary:
-      "Custom CNC plasma-cut, submerged-arc welded (SAW) heavy structural steel assemblies and trusses.",
-    specs: [
-      ["Welding Standards", "SAW / MIG / GMAW Qualified Weld Procedures"],
-      [
-        "Plate Processing",
-        "CNC Oxy-Fuel & Plasma Cutting, Drilling & Bending",
-      ],
-      ["Surface Prep", "Shot Blasting (Sa 2.5) + Primer / PU Topcoat"],
-      [
-        "Inspection",
-        "Ultrasonic (UT) & Dye Penetrant (DPT) Weld Testing",
-      ],
-    ],
-    applications:
-      "Industrial Plant Structures, Pipe Racks, Hopper & Silo Supports, Foot Over Bridges.",
-  },
-  {
-    id: "galvanised",
-    name: "Galvanised Products",
-    category: "pipes",
-    categoryLabel: "Pipes, Coils & Solar",
-    isCode: "IS 277 / IS 15961",
-    summary:
-      "Plain GI sheets, GP slit coils, Galvalume coils, and zinc-coated structural strips for roll forming.",
-    specs: [
-      ["Thickness Range", "0.35 mm to 3.00 mm"],
-      ["Zinc / Al-Zn Coating", "Z120, Z180, Z275 & AZ150"],
-      ["Spangle Finish", "Regular Spangle, Zero Spangle & Skin-Passed"],
-      ["Coil Weight / Form", "Full Coils, Slit Coils & Cut-to-Length Sheets"],
-    ],
-    applications:
-      "HVAC Ducting, Purlin Roll Forming, Electrical Panels, Grain Silos.",
   },
   {
     id: "fasteners",
@@ -450,31 +261,31 @@ export const HERO_SLIDES: readonly HeroSlide[] = [
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Where Steel Meets Smart Engineering",
     subtitle:
-      "Reliable Pre-Engineered Buildings (PEB), Industrial Sheds & Turnkey Steel Structures. Built to Perform.",
+      "Reliable Industrial Sheds, Roofing Systems & Structural Steel Solutions. Built to Perform.",
     image: "/images/hero/slide-1-peb-erection.jpg",
     imageAlt:
       "Crane hoisting structural steel I-beam onto a Pre-Engineered Steel Building frame at sunset",
-    productId: "peb",
-    featuredLabel: "PEB Systems",
+    productId: "sheds",
+    featuredLabel: "Industrial Shed",
   },
   {
     id: "infra-construction",
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Precision-Built Steel for Modern Construction",
     subtitle:
-      "Optimized for strength, speed, and long-term value across highways, factories, and logistics parks.",
+      "Optimized for strength, speed, and long-term value across industrial plants, factories, and logistics parks.",
     image: "/images/hero/slide-2-infra-construction.jpg",
     imageAlt:
       "Heavy civil and structural steel construction site at sunset with tower crane and steel columns",
-    productId: "crash-barriers",
-    featuredLabel: "Highway & Infra",
+    productId: "handrails",
+    featuredLabel: "Handrails & Ladders",
   },
   {
     id: "peb-engineers",
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Strengthening Foundations with Every Beam",
     subtitle:
-      "IS 2062 / E350 primary framing paired with high-tensile AZ150 colour-coated roof cladding systems.",
+      "High-tensile AZ150 colour-coated roof cladding paired with composite floor deck sheets and thermal insulation.",
     image: "/images/hero/slide-3-peb-engineers.jpg",
     imageAlt:
       "Structural engineers reviewing blueprints in front of a multi-bay PEB steel portal frame",
@@ -486,23 +297,23 @@ export const HERO_SLIDES: readonly HeroSlide[] = [
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Powering Progress Through Precision-Made Steel",
     subtitle:
-      "Rooftron Infra engineers heavy metal fabrications, cable trays, and electro-forged gratings for safety and durability.",
+      "Rooftron Infra supplies composite deck sheets, rolling shutter profiles, and thermal/sound/vibration insulation.",
     image: "/images/hero/slide-4-steel-welding.jpg",
     imageAlt:
       "Industrial steel fabricator welding a heavy structural I-beam with bright sparks",
-    productId: "fabrications",
-    featuredLabel: "Metal Fabrications",
+    productId: "deck-sheets",
+    featuredLabel: "Deck Sheets",
   },
   {
     id: "erw-pipes",
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Engineered for Endurance, Manufactured for Trust",
     subtitle:
-      "ERW structural pipes, galvanised coils, and solar mounting structures with full mill test certification.",
+      "Solar mount structures, high-tensile fasteners, and complete industrial roofing & insulation packages.",
     image: "/images/hero/slide-5-erw-pipes.jpg",
     imageAlt:
       "Stacked bundles of gleaming circular ERW and galvanised steel pipes inside a steel warehouse",
-    productId: "erw-pipes",
-    featuredLabel: "ERW Pipes & Coils",
+    productId: "solar",
+    featuredLabel: "Solar Mount Structures",
   },
 ];
