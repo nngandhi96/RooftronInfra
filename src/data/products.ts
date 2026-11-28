@@ -47,6 +47,7 @@ export const PRODUCTS: readonly Product[] = [
     category: "peb",
     categoryLabel: "PEB & Structures",
     isCode: "IS 800 / IS 875",
+    image: "/images/products/industrial-shed.jpg",
     summary:
       "Turnkey structural steel industrial sheds with ridge ventilation, skylights, and crane beam provisions.",
     specs: [
