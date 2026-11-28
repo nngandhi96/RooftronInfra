@@ -164,7 +164,7 @@ export function Navbar({ onSelectProduct }: NavbarProps) {
               href="#boq-inquiry"
               className="bg-safety-500 hover:bg-safety-600 text-white font-display font-bold uppercase tracking-wider text-sm sm:text-base px-4 sm:px-5 py-2.5 rounded-[2px] transition-colors inline-flex items-center gap-2 shadow-sm"
             >
-              <span>Request BOQ Quote</span>
+              <span>Request Quote</span>
               <svg
                 className="w-4 h-4"
                 fill="none"
