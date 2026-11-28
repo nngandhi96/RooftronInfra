@@ -76,6 +76,6 @@ export const FOOTER_INFRA_LINKS = [
   { productId: "handrails", label: "Handrails & Ladders" },
   { productId: "solar", label: "Solar Mount Structures" },
   { productId: "thermal-insulation", label: "Thermal Insulation" },
-  { productId: "sound-insulation", label: "Sound Insulation" },
+  { productId: "sound-insulation", label: "Acoustic Insulation" },
   { productId: "vibration-insulation", label: "Vibration Insulation" },
 ] as const;

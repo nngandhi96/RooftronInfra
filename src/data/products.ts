@@ -205,12 +205,12 @@ export const PRODUCTS: readonly Product[] = [
   },
   {
     id: "sound-insulation",
-    name: "Sound Insulation",
+    name: "Acoustic Insulation",
     category: "insulation",
     categoryLabel: "All Types Insulation",
     isCode: "IS 8225 / ISO 354",
     summary:
-      "High-NRC acoustic mineral wool slabs, perforated sound baffles, and noise-barrier wall liners for industrial plants.",
+      "High-NRC acoustic mineral wool slabs, perforated acoustic baffles, and noise-barrier wall liners for industrial plants.",
     specs: [
       [
         "Acoustic Performance",
@@ -299,7 +299,7 @@ export const HERO_SLIDES: readonly HeroSlide[] = [
     eyebrow: "Welcome To Rooftron Infra",
     headline: "Powering Progress Through Precision-Made Steel",
     subtitle:
-      "Rooftron Infra supplies composite deck sheets, rolling shutter profiles, and thermal/sound/vibration insulation.",
+      "Rooftron Infra supplies composite deck sheets, rolling shutter profiles, and thermal, acoustic, and vibration insulation.",
     image: "/images/hero/slide-4-steel-welding.jpg",
     imageAlt:
       "Industrial steel fabricator welding a heavy structural I-beam with bright sparks",
