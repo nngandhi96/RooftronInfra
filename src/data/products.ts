@@ -5,7 +5,7 @@ import type {
 } from "@/types/product";
 
 export const CATEGORY_FILTERS: readonly CategoryFilter[] = [
-  { id: "all", label: "All Products (10)" },
+  { id: "all", label: "All Products (11)" },
   { id: "peb", label: "PEB & Structures" },
   { id: "roofing", label: "Roofing & Cladding" },
   { id: "insulation", label: "All Types Insulation" },
@@ -254,6 +254,35 @@ export const PRODUCTS: readonly Product[] = [
     ],
     applications:
       "Heavy CNC Presses, HVAC Chillers, Industrial Blowers, Floating Floors & Bridge Bearings.",
+  },
+  {
+    id: "cold-insulation",
+    name: "Cold Insulation",
+    category: "insulation",
+    categoryLabel: "All Types Insulation",
+    isCode: "IS 4671 / ASTM C591",
+    summary:
+      "Closed-cell PUF, PIR, XPS, and elastomeric nitrile rubber insulation for cold storages, chillers, and sub-zero pipelines.",
+    specs: [
+      [
+        "Insulation Media",
+        "PUF / PIR Panels, Extruded Polystyrene (XPS) & Nitrile Rubber",
+      ],
+      [
+        "Operating Temperature",
+        "-40°C to +105°C Sub-Zero & Chilled Water Service",
+      ],
+      [
+        "Thermal Conductivity",
+        "0.020 – 0.028 W/m·K with Closed-Cell Vapour Barrier",
+      ],
+      [
+        "Moisture & Vapour Lock",
+        "Zero Water Absorption (<1%) & Anti-Condensation Seal",
+      ],
+    ],
+    applications:
+      "Cold Storages, Chiller Pipelines, Dairy & Pharma Plants, Reefer Warehouses & HVAC.",
   },
 ];
 

@@ -78,4 +78,5 @@ export const FOOTER_INFRA_LINKS = [
   { productId: "thermal-insulation", label: "Thermal Insulation" },
   { productId: "sound-insulation", label: "Acoustic Insulation" },
   { productId: "vibration-insulation", label: "Vibration Insulation" },
+  { productId: "cold-insulation", label: "Cold Insulation" },
 ] as const;

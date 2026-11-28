@@ -82,6 +82,12 @@ const ICON_MAP: Record<string, ReactNode> = {
       <path d="M14 16l20 4-20 4 20 4-20 4 20 4" />
     </>
   ),
+  "cold-insulation": (
+    <>
+      <path d="M24 6v36M6 24h36M11 11l26 26M37 11L11 37" />
+      <path d="M19 10l5 5 5-5M19 38l5-5 5 5M10 19l5 5-5 5M38 19l-5 5 5 5" />
+    </>
+  ),
 };
 
 export function ProductIcon({
